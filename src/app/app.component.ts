@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  isShow=false;
+  constructor(){
+    setTimeout(()=>{
+      this.isShow=!this.isShow;
+    },5000);
+  }
 }
